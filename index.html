@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
-
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.fullPage.js" ></script>
-
-		<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-		<script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
 	</head>
 	<body>
 		<div id="fullpage" class="fullpage-wrapper">
@@ -17,5 +12,14 @@
 		    <div class="section fp-section fp-table">Projects</div>
 		    <div class="section fp-section fp-table">Contact form</div>
 		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+    			$('#fullpage').fullpage();
+			});
+		</script>
+		<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+		<script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
 	</body>
 </html>
