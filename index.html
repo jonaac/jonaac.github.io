@@ -3,35 +3,52 @@
 	<head>
 		<title>Jona</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	</head>
 	<body>
-		<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img alt="Brand" src="...">
-      </a>
-    </div>
-  </div>
-</nav>
-		<div id="fullpage" class="fullpage-wrapper">
-		    <div class="section fp-section fp-table">Home Page</div>
-		    <div class="section fp-section fp-table">About Me</div>
-		    <div class="section fp-section fp-table">Skills</div>
-		    <div class="section fp-section fp-table">Projects</div>
-		    <div class="section fp-section fp-table">Contact form</div>
+
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-default navbar-fixed-top center" role="navigation">
+          	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+            	<span class="sr-only">Toggle navigation</span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+          	</button>
+	        <div class="collapse navbar-collapse navbar-menubuilder navbar-inner">
+	            <ul class="nav navbar-nav">
+	            	<li><a href="">Home</a></li>
+	                <li><a href="">About Me</a></li>
+	                <li><a href="">Resume</a></li>
+	                <li><a href="">Projects</a></li>
+	                <li><a href="">Contact Me</a></li>
+	            </ul>
+	        </div>
+		</nav>
+
+		<!-- /Navigation Bar -->
+
+		<div id="home" class="container-fluid">
 		</div>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<div id="content" class="container-fluid">
+			
+		</div>
+
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fullPage.js" ></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-    			$('#fullpage').fullpage();
+    			$('#fullpage').fullpage({
+    				//Accessibility
+        			keyboardScrolling: true
+    			});
 			});
 		</script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 		<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
 		<script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
 	</body>
