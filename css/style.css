@@ -17,6 +17,12 @@ time, mark, audio, video {
 
 /************** NAVIGATION BAR *****************/
 
+.navbar-default
+{
+	background: #2d2d2d;
+	border-style: none;
+}
+
 .navbar-fixed-top {
     min-height: 70px;
 }
@@ -51,6 +57,17 @@ time, mark, audio, video {
 .navbar-inner>ul li
 {
 	margin: 0 10px 0 10px;
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 11px;
+}
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: grey;
 }
 
 /************* END NAVIGATION BAR **************/
