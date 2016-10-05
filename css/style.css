@@ -64,10 +64,10 @@ time, mark, audio, video {
     color: white;
     font-size: 11px;
 }
-}
 
-.navbar-default .navbar-nav>li>a:hover {
-    color: grey;
+.navbar-default .navbar-nav>li>a:hover
+{
+	color:#cecece	;
 }
 
 /************* END NAVIGATION BAR **************/
@@ -80,6 +80,8 @@ time, mark, audio, video {
 	height: 100%;
 	background-size: cover;
 	background-color: white;
+	background: url("../img/background-img.png") no-repeat center;
+	background-size: 1170px 600px;
 }
 
 /**************** END HOME PAGE *****************/
