@@ -19,7 +19,7 @@ time, mark, audio, video {
 
 .navbar-default
 {
-	background: #2d2d2d;
+	background: none;
 	border-style: none;
 }
 
@@ -63,17 +63,17 @@ time, mark, audio, video {
 .navbar-inner>ul li
 {
 	margin: 0 10px 0 10px;
-	color: white;
+	color: black;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: white;
+    color: black;
     font-size: 11px;
 }
 
 .navbar-default .navbar-nav>li>a:hover
 {
-	color:#cecece	;
+	color:#cecece;
 }
 
 /************* END NAVIGATION BAR **************/
@@ -91,7 +91,7 @@ div.header-image {
   /* The background image must be 800px wide */
   max-width: 800px;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 150px;
 
 }
 
