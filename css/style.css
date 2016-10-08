@@ -4,13 +4,13 @@ html, body {
 }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 hr {
   border-color: #db6663;
   border-width: 3px;
-  max-width: 100px;
+  max-width: 150px;
 }
 
 hr.light {
@@ -26,13 +26,13 @@ a {
 
 h2, h4, h5, h6
 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Open Sans';
   color: white;
 }
 
 h1,  h3
 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Open Sans';
   color: black;
 }
 
@@ -40,11 +40,14 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
-  color:white;
 }
 
 .bg-primary {
-  background-color: #db6663;
+  background: url('../img/turingbombe.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .bg-dark {
@@ -57,6 +60,7 @@ p {
 }
 
 section {
+  background-color: white;
   padding: 100px 0;
 }
 
@@ -68,20 +72,19 @@ aside {
   padding: 0;
 }
 
-
 /************************ NAVIGATION BAR ***************************/
 .navbar-default
 {
   background-color: transparent;
   border-color: transparent;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Open Sans';
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: #F05F40;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Open Sans';
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -303,6 +306,7 @@ header .header-content .header-content-inner p {
 /************************** END HEADER ****************************/
 
 
+/*************************** SECTIONS *****************************/
 .section-heading {
   margin-top: 0;
 }
@@ -319,6 +323,18 @@ header .header-content .header-content-inner p {
   margin-bottom: 0;
 }
 
+.section-wrapper .container .row h1{
+  font-weight: 600;
+  padding: 55px 0 55px 25px;
+}
+.section-wrapper .container .row h1:after {
+    display: block;
+    content: '';
+    margin-top: 30px;
+    width: 80px;
+    height: 10px;
+    background-color: #db6663;
+}
 .call-to-action h2 {
   margin: 0 auto 20px;
 }
@@ -329,6 +345,7 @@ header .header-content .header-content-inner p {
   padding-right: 0;
   padding-left: 0;
 }
+/*************************** END SECTIONS ****************************/
 
 
 /*************************** BUTTONS *****************************/
@@ -345,7 +362,7 @@ header .header-content .header-content-inner p {
   background-color: white;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', 'Open Sans';
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 0;
