@@ -24,13 +24,13 @@ a {
   color: #F05F40;
 }
 
-h2, h3, h4, h5, h6
+h2, h4, h5, h6
 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   color: white;
 }
 
-h1
+h1,  h3
 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   color: black;
@@ -40,6 +40,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+  color:white;
 }
 
 .bg-primary {
@@ -71,8 +72,8 @@ aside {
 
 .navbar-default
 {
-	background: white;
-	border-style: none;
+	background: none;
+	border-bottom-style: none;
 }
 
 .navbar-fixed-top {
@@ -115,17 +116,16 @@ aside {
 .navbar-inner>ul li
 {
 	margin: 0 10px 0 10px;
-	color: black;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: black;
-    font-size: 11px;
+    font-size: 18px;
 }
 
 .navbar-default .navbar-nav>li>a:hover
 {
-	color:#cecece;
+	color:#db6663;
 }
 
 /************* END NAVIGATION BAR **************/
@@ -146,7 +146,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/wallpaper2.png');
+  background-image: url('../img/wallpaper.png');
   text-align: center;
   color: white;
 }
@@ -168,10 +168,11 @@ header .header-content .header-content-inner hr {
 }
 header .header-content .header-content-inner p {
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
+  color: black;
   font-size: 16px;
   margin-bottom: 50px;
 }
+
 @media (min-width: 768px) {
   header {
     min-height: 100%;
@@ -194,11 +195,12 @@ header .header-content .header-content-inner p {
   }
   header .header-content .header-content-inner p {
     font-size: 18px;
-    max-width: 80%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
 }
+
 .section-heading {
   margin-top: 0;
 }
@@ -272,40 +274,13 @@ header .header-content .header-content-inner p {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: #F05F40;
+  color: #db6663;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
-.btn-default {
-  color: #222222;
-  background-color: white;
-  border-color: white;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-}
-.btn-default:hover,
-.btn-default:focus,
-.btn-default.focus,
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-  color: #222222;
-  background-color: #f2f2f2;
-  border-color: #ededed;
-}
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-  background-image: none;
-}
 
-.btn-default .badge {
-  color: white;
-  background-color: #222222;
-}
 .btn-primary {
   color: #db6663;
   background-color: white;
@@ -315,15 +290,8 @@ header .header-content .header-content-inner p {
   transition: all 0.35s;
 }
 .btn-primary .badge {
-  color: #F05F40;
+  color: white;
   background-color: white;
-}
-
-.btn-primary:hover,
-.btn:hover
-{
-	background-color:rgba(255,255,255,0.1);
-	border-color: rgba(255,255,255,0.1);
 }
 
 .btn {
@@ -335,6 +303,34 @@ header .header-content .header-content-inner p {
 .btn-xl {
   padding: 15px 30px;
 }
+
+.btn-primary-red {
+  color: white;
+  background-color: #db6663;
+  border-color: #db6663;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.btn-primary-red .badge {
+  color: #db6663;
+  background-color: white;
+}
+
+.btn-primary:hover
+{
+  background-color:rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.1);
+}
+
+.btn-primary-red:hover
+{
+  color: rgb(219,102,99);
+  background-color: white;
+  border-color: rgb(219,102,99,0.9);
+}
+
+
 ::-moz-selection {
   color: white;
   text-shadow: none;
