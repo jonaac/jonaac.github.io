@@ -283,7 +283,6 @@ section {
   -o-background-size: cover;
   background-size: cover;
 }
-
 .section-wrapper .container .row h1{
   font-weight: 600;
   padding: 55px 0 15px 25px;
@@ -300,6 +299,7 @@ section {
   font-weight: 600;
   padding: 55px 0 25px 25px;
 }
+
 .section-wrapper .container .row h2:after {
         display: block;
     content: '';
