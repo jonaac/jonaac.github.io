@@ -338,12 +338,12 @@ section {
   padding: 55px 0 25px 25px;
 }
 .section-wrapper .container .row h2:after {
-    display: block;
+        display: block;
     content: '';
-    margin-top: 30px;
+    margin-top: 20px;
     width: 80px;
-    height: 10px;
-    background-color: black;
+    height: 5px;
+    background-color: #333333;
 }
 .call-to-action h2 {
   margin: 0 auto 20px;
@@ -378,6 +378,10 @@ blockquote:before {
     border-right: 6px solid #333333;
     background-color: transparent;
     float: left;
+}
+.resume
+{
+  padding-right: 50px;
 }
 /*************************** END SECTIONS ****************************/
 
