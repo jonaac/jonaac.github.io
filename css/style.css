@@ -20,6 +20,12 @@ a {
   color: #db6663;
 }
 
+a:hover
+{
+  color: black;
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6
 {
   font-family: 'Montserrat', 'Open Sans';
@@ -30,6 +36,12 @@ p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+}
+
+h4 {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 /************************ NAVIGATION BAR ***************************/
@@ -335,6 +347,31 @@ blockquote:before {
 .resume
 {
   padding-right: 50px;
+}
+ul.employment {
+  margin: 40px 0;
+  padding: 0;
+  list-style: none;
+}
+ul.employment .row .description{
+    padding: 5px 0 15px 15px;
+    margin-bottom: 30px;
+    border: 0 solid transparent;
+    border-left-width: 1px;
+    -moz-border-image: url(../img/black-spot.png) 0 1 repeat;
+    -webkit-border-image: url(../img/black-spot.pngg) 0 1 repeat;
+    -o-border-image: url(../img/black-spot.png) 0 1 repeat;
+    border-image: url(../img/black-spot.png) 0 1 repeat;
+}
+ul.employment .description .subtitle {
+    font-family: 'Montserrat', 'Open Sans';
+    font-size: 16px;
+    color: #bfbfbf;
+}
+ul.employment .description p {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 24px;
 }
 .my-skills {
   padding-left: 0;
