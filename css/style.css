@@ -13,15 +13,11 @@ hr {
   max-width: 150px;
 }
 
-hr.light {
-  border-color: white;
-}
-
 a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #F05F40;
+  color: #db6663;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -34,23 +30,6 @@ p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
-}
-
-.bg-dark {
-  background-color: #222222;
-  color: white;
-}
-
-.text-faded {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-aside {
-  padding: 50px 0;
-}
-
-.no-padding {
-  padding: 0;
 }
 
 /************************ NAVIGATION BAR ***************************/
@@ -305,22 +284,6 @@ section {
   background-size: cover;
 }
 
-.section-heading {
-  margin-top: 0;
-}
-.service-box {
-  max-width: 400px;
-  margin: 50px auto 0;
-}
-@media (min-width: 992px) {
-  .service-box {
-    margin: 20px auto 0;
-  }
-}
-.service-box p {
-  margin-bottom: 0;
-}
-
 .section-wrapper .container .row h1{
   font-weight: 600;
   padding: 55px 0 15px 25px;
@@ -344,16 +307,6 @@ section {
     width: 80px;
     height: 5px;
     background-color: #333333;
-}
-.call-to-action h2 {
-  margin: 0 auto 20px;
-}
-.text-primary {
-  color: #db6663;
-}
-.no-gutter > [class*='col-'] {
-  padding-right: 0;
-  padding-left: 0;
 }
 .img-responsive
 {
@@ -382,6 +335,47 @@ blockquote:before {
 .resume
 {
   padding-right: 50px;
+}
+.my-skills {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+ul.my-skills > li {
+    padding: 5px 0 15px 15px;
+    margin-bottom: 30px;
+    border: 0 solid transparent;
+    border-left-width: 1px;
+    -moz-border-image: url(../img/black-spot.png) 0 1 repeat;
+    -webkit-border-image: url(../img/black-spot.pngg) 0 1 repeat;
+    -o-border-image: url(../img/black-spot.png) 0 1 repeat;
+    border-image: url(../img/black-spot.png) 0 1 repeat;
+}
+ul.my-skills > li .skill-title {
+    font-family: 'Montserrat', 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+ul.my-skills > li ul.skill-levels {
+    padding: 15px 0;
+}
+ul.my-skills > li ul.skill-levels li {
+    margin-right: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    float: left;
+    overflow: hidden;
+    margin-top: -10px;
+}
+ul.my-skills > li ul.skill-levels li.active {
+    color: #db6663;
+}
+ul.my-skills > li ul.skill-levels li a{
+    color: black;
+}
+ul.my-skills > li ul.skill-levels li a:hover {
+    color: #db6663;
 }
 /*************************** END SECTIONS ****************************/
 
@@ -432,8 +426,6 @@ blockquote:before {
   border-color: rgb(219,102,99,0.9);
 }
 /*************************** END BUTTONS *****************************/
-
-
 
 ::-moz-selection {
   color: white;
