@@ -414,6 +414,71 @@ ul.my-skills > li ul.skill-levels li a{
 ul.my-skills > li ul.skill-levels li a:hover {
     color: #db6663;
 }
+.caption-outside-wrapper {
+  margin-top: 50px;
+}
+.caption-outside-wrapper .caption-title {
+  font-family: 'Montserrat', 'Open Sans';
+  font-size: 21px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.caption-outside-wrapper .caption-description {
+  font-size: 16px;
+  line-height: 1.5;
+  max-height: 7.5em;
+  overflow: hidden;
+}
+.icons-line-wrapper {
+  padding-bottom: 30px;
+}
+.icons-line-wrapper .icons-line {
+  position: relative;
+}
+.icons-line-wrapper .icons-line a {
+  display: inline-block;
+  margin: 5px;
+  color:#db6663;
+}
+.icons-line-wrapper .icons-line a:hover {
+  color: rgba(219,102,99, 0.3);
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.icons-line-wrapper .icons-line a.l-tooltip i {
+  font-size: 14px;
+}
+.icons-line-wrapper .icons-line a.l-tooltip:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  content: '';
+  font-family: 'Open Sans';
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #808080;
+  opacity: 0;
+}
+.icons-line-wrapper .icons-line a.l-tooltip.l-external-link:hover:after {
+  content: 'external link';
+  opacity: 1;
+}
+.icons-line-wrapper .icons-line a.l-tooltip.l-link:hover:after {
+  content: 'open the project';
+  opacity: 1;
+}
+.icons-line-wrapper .icons-line a.l-tooltip.l-share:hover:after {
+  content: 'share';
+  opacity: 1;
+}
+ul.images {
+  list-style: none;
+}
+ul.images > li {
+  display: inline-block;
+}
 /*************************** END SECTIONS ****************************/
 
 
