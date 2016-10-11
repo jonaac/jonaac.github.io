@@ -426,7 +426,6 @@ ul.my-skills > li ul.skill-levels li a:hover {
 .caption-outside-wrapper .caption-description {
   font-size: 16px;
   line-height: 1.5;
-  max-height: 7.5em;
   overflow: hidden;
 }
 .icons-line-wrapper {
