@@ -417,6 +417,11 @@ ul.my-skills > li ul.skill-levels li a:hover {
 .caption-outside-wrapper {
   margin-top: 50px;
 }
+
+ul.images > li {
+  margin-top: 50px;
+}
+
 .caption-outside-wrapper .caption-title {
   font-family: 'Montserrat', 'Open Sans';
   font-size: 21px;
