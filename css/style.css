@@ -18,7 +18,7 @@ a {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
   color: #db6663;
-  text-decoration-line: none;
+  text-decoration: none;
 }
 
 a:hover
@@ -32,7 +32,7 @@ a:link, a:visited {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
   color: #db6663;
-  text-decoration-line: none;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -83,7 +83,6 @@ h4 {
 .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 13px;
   color: #222222;
 }
 .navbar-default .nav > li > a:hover,
@@ -217,6 +216,15 @@ h4 {
 {
 	color:#db6663;
 }
+
+.navbar-default .navbar-nav>li.active > a{
+    color: black;
+    font-size: 18px;
+}
+.navbar-default .navbar-nav>li.active > a:hover{
+    color:#db6663;
+}
+
 /********************** END NAVIGATION BAR ***********************/
 
 
