@@ -18,12 +18,21 @@ a {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
   color: #db6663;
+  text-decoration-line: none;
 }
 
 a:hover
 {
   color: black;
   text-decoration: none;
+}
+
+a:link, a:visited {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #db6663;
+  text-decoration-line: none;
 }
 
 h1, h2, h3, h4, h5, h6
