@@ -96,7 +96,7 @@ nav.navbar {
 .entry-meta { text-align: center; }
 .entry-content a.more-link { display:block; max-width:18.75em; text-align:center; margin:2.5em auto 0 auto; padding:0.5em 0 0.4em 0; color:#444; font-weight:400; font-size:.85em; background:none; border-bottom:1px dotted #ccc; letter-spacing:2px; }
 .entry-meta .comments-link:before { content: "\f0e5"; font-size:1em; margin-left: .6em; margin-right: -0.8em; display:inline-block; }
-.featured-image { text-align:center; }
-.featured-image img {max-width: 432px;}
+.featured-image { max-width: 432px; text-align:center; margin:0 auto;}
+.featured-image img {}
 .site-content h1 a:active { border-bottom:1px dotted #ccc; }
 
