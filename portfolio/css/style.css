@@ -2,7 +2,6 @@ html, body {
   height: 100%;
   width: 100%;
 }
-
 html, body, button, input, select, textarea, .toggle h4 {
     font-family: "UnifrakturMaguntia", Georgia, serif;
 }
@@ -10,7 +9,7 @@ html, body, button, input, select, textarea, .toggle h4 {
 /* -------------------------------------------- */
 /* GENERIC */
 html { font-size:100%; }
-body { line-height:1.6; overflow-x: hidden; }
+body { line-height:1.6; overflow-x: hidden; font-size: 100%}
 img {max-width:100%;height:auto;}
 iframe { border:0; outline:none; }
 video, audio { width:100%; }
@@ -20,6 +19,8 @@ a { color: #333; text-decoration:none; }
 a:hover { color:#000; text-decoration:none}
 a:focus { outline: none; }
 h1 a { color:#333; }
+::selection { text-shadow:none; color:#333; background:#ffe9e9; }
+
 
 /* -------------------------------------------- */
 /* TYPOGRAPHY */
@@ -82,8 +83,9 @@ nav.navbar {
 /* -------------------------------------------- */
 .hentry { padding: 1.25em 0 2.5em 0; }
 .blog-posts .entry-title, .portfolio-single .entry-title { font-size:2.1em;}
-.entry-meta { padding:.6em 0 1.2em 0; color:#aaa; font-weight:400; font-size:.8em; letter-spacing:1px; text-align:center; }
-.entry-meta a, .nav-single a, .comment-meta a, .comment-reply-link, .navigation a, .post-pagination a, .related-posts a, .archives a, .tabs .tab-titles li a { color:#333; border-bottom:1px dotted #ccc; }
+.entry-title { margin: 0 0 0 0; }
+.entry-meta { padding:0 0 2.2em 0; color:#aaa; font-weight:400; font-size:.8em; letter-spacing:1px; text-align:center; }
+.entry-meta p, .nav-single a, .comment-meta a, .comment-reply-link, .navigation a, .post-pagination a, .related-posts a, .archives a, .tabs .tab-titles li a { color:#333; border-bottom:1px dotted #ccc; }
 .entry-meta a {display: block;}
 .site-content h1 a:hover, .nav-single a:hover, .comment-meta a:hover, .comment-reply-link:hover, .navigation a:hover, .post-pagination a:hover, .related-posts a:hover, .archives a:hover, .entry-content a.more-link:hover, .launch-wrap a:hover { color:#000; background-color:#f7f7f7; }
 .entry-meta a:active, .nav-single a:active, .comment-meta a:active, .comment-reply-link:active, .navigation a:active, .post-pagination a:active, .related-posts a:active, .archives a:active, .entry-content a.more-link:active, .launch-wrap a:active { background-color:#eee; }
@@ -91,7 +93,11 @@ nav.navbar {
 .entry-meta li{display:inline-block; padding: 0px 10px;}
 .entry-meta .edit-link { float:right; }
 .entry-header, .post .entry-title { text-align:center; }
-.entry-content { padding: .250em 3.5em 1.250em 3.5em; }
+.entry-content.home-page { padding: .250em 3.5em 1.250em 3.5em; font-size: 14px;}
+@media (max-width: 767px) { 
+  .entry-content.home-page { padding: .250em 0 1.250em 0 }
+}
+.entry-content { padding: .250em 0 1.250em 0; }
 .page .entry-content { padding-top: 1em; }
 .entry-meta { text-align: center; }
 .entry-content a.more-link { display:block; max-width:18.75em; text-align:center; margin:2.5em auto 0 auto; padding:0.5em 0 0.4em 0; color:#444; font-weight:400; font-size:.85em; background:none; border-bottom:1px dotted #ccc; letter-spacing:2px; }
@@ -99,4 +105,3 @@ nav.navbar {
 .featured-image { max-width: 432px; text-align:center; margin:0 auto;}
 .featured-image img {}
 .site-content h1 a:active { border-bottom:1px dotted #ccc; }
-
