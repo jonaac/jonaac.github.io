@@ -17,7 +17,8 @@ object, embed, video, iframe { max-width:100%; }
 h1, h2, h3, h4, h5, h6 { line-height:1.5; font-weight:400; }
 a { color: #333; text-decoration:none; }
 a:hover { color:#000; text-decoration:none}
-a:focus { outline: none; }
+a:link {color: #000; text-decoration:none}
+a:focus { outline: none; color: #000;}
 h1 a { color:#333; }
 ::selection { text-shadow:none; color:#333; background:#ffe9e9; }
 
@@ -100,6 +101,7 @@ nav.navbar {
 .entry-content { padding: .250em 0 1.250em 0; }
 .page .entry-content { padding-top: 1em; }
 .entry-meta { text-align: center; }
+.entry-content a { color:#333; border-bottom:1px dotted #ccc; }
 .entry-content a.more-link { display:block; max-width:18.75em; text-align:center; margin:2.5em auto 0 auto; padding:0.5em 0 0.4em 0; color:#444; font-weight:400; font-size:.85em; background:none; border-bottom:1px dotted #ccc; letter-spacing:2px; }
 .entry-meta .comments-link:before { content: "\f0e5"; font-size:1em; margin-left: .6em; margin-right: -0.8em; display:inline-block; }
 .featured-image { max-width: 432px; text-align:center; margin:0 auto;}

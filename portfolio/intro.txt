@@ -1,0 +1,15 @@
+Deep XGBoost
+
+I was first introduced to XGBoost when I was working as a data scientist. I was surprised at how accurate, efficient and interpretable it was. Naturally, I was very intrigued by recent research [1,2] suggesting the use of Convolutional Neural Networks (CNN) with XGboost for image classification with highly promising results. This inspired me to look into its potential for real world application, so I decided to further test this idea with more complex datasets and larger CNN structures.
+
+Safe RL
+
+Reinforcement learning (RL) algorithms are becoming more and more prevalent in todays society. The more integrated they become the more wary we should be of potential safety concerns. From an ethical perspective it is important that we develop algorithms that can provide certain safety assurances. We want to be able to avoid any potential harm when deploying them in real world scenarios. This project is my introduction to safe RL. I develop a grid-world simulation and a RL algorithm from scratch (no ML or RL libraries) to experiment and test safety methods.
+
+Literary Review
+
+When teaching a child how to perform a task we usually tell them what they should do, and what they should avoid. Now imagine how slow and unsafe it would be to learn if the child could only learn from the feedback of its own experiences. This is the same limitation Reinforcement Learning has when it comes to training. So, how can we introduce prior knowledge into the training process? Recent research has shown the potential use of formal logic as knowledge that can be used during RL training to make the process faster and safer. In this article I will contextualize and critically evaluate the literature on this topic.
+
+Thesis
+
+From an ethical perspective I believe we are morally obligated to ensure safe solutions when bringing forward any AI applications to the real world. From a developer's perpective I believe that part of optimizing a learning process is to be able to minimize safety violation during the training process. That is why for my thesis I am focusin on safe Reinforcement Learning. Inspired by the <a href="#lit-review">literature</a> my thesis will introduce a new approach for applying formal logic to the RL problem in order to expose the environment's reward structure and constrains so it can learn faster and safer.
