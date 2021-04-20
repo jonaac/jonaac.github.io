@@ -7,7 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<!-- style / responsive -->
-	<link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 
 	<!-- fonts -->
@@ -38,7 +41,7 @@
 			<!-- Navigation Bar -->
 			<nav class="navbar navbar-static-top center" role="navigation">
 				<div class="navbar-header ">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">	
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -47,9 +50,10 @@
 				</div>
 				<div class="collapse navbar-collapse navbar-menubuilder navbar-inner">
 					<ul class="nav navbar-nav">
-						<li><a href="../index.html" class="page-scroll"> Projects </a></li>
-						<li><a href="../aboutme.html" class="page-scroll"> About Me </a></li>
-						<li><a href="../contact.html" class="page-scroll"> Contact </a></li>
+						<li><a href="../index.html" class="page-scroll">Projects</a></li>
+						<li><a href="../aboutme.html" class="page-scroll">About Me</a></li>
+						<li><a href="../contact.html" class="page-scroll">Thesis </a></li>
+						<li><a href="../contact.html" class="page-scroll">Contact </a></li>
 						<!--<li><a class="page-scroll" href="#"><b> BLOG </b></a></li>-->
 					</ul>
 				</div>
@@ -97,7 +101,7 @@
 							
 							<!-- .entry-content -->
 							<div class="entry-content work">
-								<p class="abstract"> The concept of using algorithms to ease the decision making in financial markets is nothing new, in fact the term algorithmic trading was coined back in 90s and numerous firms have been using different technologies to make investment decisions since then. In this work I take a dataset of bitcoin prices, I preprocess the data and I implement an LSTM model for price prediction. My model was able to generate profits. I also simulate a tranding environment in the form of an MDP and test some baseline DRL algorithms to see if there is any potential in this approach. I finish by taking a look into the differences of these approaches, and I also comment on the changes that might help the DRL approach to perform better.<a href="https://github.com/jonaac/Bitcoin-price-prediction-with-Deep-RL" target="_blank" class="more-link">Github Reposiroty <span class="meta-nav"> →</span></a>
+								<p class="abstract"> The concept of using algorithms to ease the decision making in financial markets is nothing new, in fact the term algorithmic trading was coined back in 90s and numerous firms have been using different technologies to make investment decisions since then. In this project, I take a dataset of bitcoin prices, preprocess the data, and implement two LSTM models. The first model predicts bitcoin's day-to-day price and the second model predicts day-to-day price differences. <a href="https://github.com/jonaac/Bitcoin-price-prediction-with-Deep-RL" target="_blank" class="more-link">Github Reposiroty <span class="meta-nav"> →</span></a>
 								</p>
 
 								<h2 style="text-align: center">Algorithmic Trading - Bitcoin Price Prediction</h2>

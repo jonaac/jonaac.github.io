@@ -64,6 +64,8 @@ h1.site-title a:hover { text-decoration:none}
 .site-description { font-size:1em; font-weight:400; }
 
 /* Navigation Bar */
+.navbar .navbar-toggle .icon-bar { background-color: black;}
+
 .navbar.center .navbar-inner { text-align: center; }
 .navbar.center .navbar-inner .nav { float: none; display: inline-block; }
 nav.navbar {
@@ -72,13 +74,15 @@ nav.navbar {
   left: 50%;
   transform: translateX(-50%);
 }
-.navbar {
+.navbar.center {
     border-style: solid;
     border-width: 1px 0;
     border-color: #eee;
+    background: white;
 }
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:focus:hover { background-color: transparent; color: #000; }
+.navbar .nav > li > .selected {border-bottom:1px dotted #ccc;}
 
 /* WORK */
 /* -------------------------------------------- */
@@ -106,6 +110,7 @@ nav.navbar {
 .entry-meta .comments-link:before { content: "\f0e5"; font-size:1em; margin-left: .6em; margin-right: -0.8em; display:inline-block; }
 .featured-image { max-width: 432px; text-align:center; margin:0 auto;}
 .featured-image img {}
+.formula {max-width: 100px;}
 .site-content h1 a:active { border-bottom:1px dotted #ccc; }
 
 .entry-content.work { text-align: justify; }
@@ -126,5 +131,5 @@ nav.navbar {
 .aboutme .entry-content .degree{padding:0;}
 
 .profile-image img {border-radius: 50%; max-width: 250px; text-align:center; margin:0 auto;}
-
+.description {font-style: italic;}
 
