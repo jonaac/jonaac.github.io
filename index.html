@@ -11,419 +11,237 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <!-- icons -->
-    <link href="assets/fonts-icons/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- for FF, Chrome, Opera -->
-	<link rel="icon" type="image/png" href="img/icon.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="img/icon.png" sizes="32x32">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<!-- icons -->
+	<link href="assets/fonts-icons/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- for FF, Chrome, Opera -->
+	<link rel="icon" type="image/png" href="" sizes="16x16">
+	<link rel="icon" type="image/png" href="" sizes="32x32">
 
-<!-- for IE -->
-<link rel="icon" type="image/x-icon" href="img/icon.png" >
-<link rel="shortcut icon" type="image/x-icon" href="img/icon.png"/>
+	<!-- for IE -->
+	<link rel="icon" type="image/x-icon" href="" >
+	<link rel="shortcut icon" type="image/x-icon" href=""/>
 
 </head>
 <body>
 
-	<!-- Navigation Bar -->
-	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top center" role="navigation">
-		<div class="navbar-header">
-          	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
-            	<span class="sr-only">Toggle navigation</span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-          	</button>
-          	<a class="hidden-sm hidden-md hidden-lg navbar-brand page-scroll" href="#page-top"></a>
-      	</div>
-        <div class="collapse navbar-collapse navbar-menubuilder navbar-inner">
-            <ul class="nav navbar-nav">
-            	<li><a class="page-scroll" href="#home"><b> WELCOME </b></a></li>
-                <li><a class="page-scroll" href="#intro"><b> ABOUT ME </b></a></li>
-                <li><a class="page-scroll" href="#resume"><b> RESUME </b></a></li>
-                <li><a class="page-scroll" href="#works"><b> WORKS </b></a></li>
-                <li><a class="page-scroll" href="#contact"><b> CONTACT </b></a></li>
-                <!--<li><a class="page-scroll" href="#"><b> BLOG </b></a></li>-->
-            </ul>
-        </div>
-	</nav>
-	<!-- /Navigation Bar -->
+	<header class="wrapper site-header">
+		<div class="row">
+			<hgroup>
+				<h1 class="site-title">
+					<a href="index.html"> Jona </a>
+				</h1>
+				<h2 class="site-description">
+					Machine Learning Engineer
+				</h2>
+			</hgroup>
+			<!-- Navigation Bar -->
+			<nav class="navbar navbar-static-top center" role="navigation">
+				<div class="navbar-header ">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse navbar-menubuilder navbar-inner">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html" class="page-scroll">Projects</a></li>
+						<li><a href="aboutme.html" class="page-scroll">About Me</a></li>
+						<li><a href="contact.html" class="page-scroll">Contact </a></li>
+						<!--<li><a class="page-scroll" href="#"><b> BLOG </b></a></li>-->
+					</ul>
+				</div>
+			</nav>
+			<!-- /Navigation Bar -->
+		</div>
+	</header>
 
+	<section class="middle wrapper">
+		<div class="row">
+			<div id="primary" class="site-content">
+				<!-- #content -->
+				<div id="content" role="main">
+					<div class="blog-posts readable-content">
+						<!-- .post -->
+						<article class="post type-post hentry">
+							<!-- .entry-header -->
+							<header class="entry-header">
+								<h1 class="entry-title">
+									<a href="works/deepxgboost.html" rel="bookmark">CNNs and Gradient Boosting for Image Classification</a>
+								</h1>
+							</header>
+							<!-- .entry-header -->
+							 
+							 <!-- .entry-meta --> 
+							<footer class="entry-meta">
+								<ul>
+									<li><p href="#">Computer Vision</p></li>
+									<li><p href="#">XGBoost</p></li>
+									<li><p href="#">TensorFlow</p></li>
+									<li><p href="#">Keras</p></li>
+								</ul>			
+							</footer>
+							<!-- .entry-meta -->  
+									  
+							<!-- .featured -->
+							<div class="featured-image">
+								<img src="img/deepxgboost.gif" alt="blog-image">
+							</div>
+							<!-- .featured -->
+							
+							<!-- .entry-content -->
+							<div class="entry-content home-page">
+								<p>Research [<a href="https://pubmed.ncbi.nlm.nih.gov/30713552/">1</a>, <a href="https://dl.acm.org/doi/10.1145/3123266.3127902">2</a>, <a href="https://link.springer.com/chapter/10.1007/978-3-319-64185-0_28">3</a>] shows you can combine XGBoost and CNNs to solve non-image classification problems. In this post, I adapt this model to show a shockingly powerful method for image classification.</p>
+								<a href="works/deepxgboost.html" class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
+							</div>
+							<!-- .entry-content -->
+						</article>
+						<article class="post type-post hentry">
+							<!-- .entry-header -->
+							<header class="entry-header">
+								<h1 class="entry-title">
+									<a href="works/safeRL.html" rel="bookmark">An Introduction to Safe Reinforcement Learning</a>
+								</h1>
+							</header>
+							<!-- .entry-header -->
+							 
+							<!-- .entry-meta --> 
+							<footer class="entry-meta">
+								<ul>
+									<li><p href="#">AI Ethics</p></li>
+									<li><p href="#">Q-Learning</p></li>
+									<li><p href="#">Python</p></li>
+								</ul>		   
+							</footer>
+							<!-- .entry-meta -->  
+									  
+							<!-- .featured -->
+							<div class="featured-image">
+								<img src="img/marsrover.jpg" alt="blog-image">
+							</div>
+							<!-- .featured -->
+							
+							<!-- .entry-content -->
+							<div class="entry-content home-page">
+								<p>This project is my introduction to safe Reinforcement Learning. For this post, I develop a grid-world simulation and a RL algorithm from scratch to experiment with safety RL methods.</p>
+								<a href="works/safeRL.html" class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
+							</div>
+							<!-- .entry-content -->
+						</article>
+						<article class="post type-post hentry">
+							<!-- .entry-header -->
+							<header class="entry-header">
+								<h1 class="entry-title">
+									<a href="works/logicRL.html" name="lit-review">In-depth analysis of Reinforcement Learning and Formal Logic</a>
+								</h1>
+							</header>
+							<!-- .entry-header -->
+							 
+							 <!-- .entry-meta --> 
+							<footer class="entry-meta">
+								<ul style="margin-bottom: 10px">
+									<li><p href="#">Article</p></li>
+									<li><p href="#">Literary Review</p></li>
+									<li><p href="#">Reinforcement Learning</p></li>
+									<li><p href="#">Logic</p></li>
+								</ul>		   
+							</footer>
+							<!-- .entry-meta -->  
+									  
+							<!-- .featured -->
+							<div class="featured-image">
+								<img src="img/LiteraryReview.jpg" alt="blog-image">
+							</div>
+							<!-- .featured -->
+							
+							<!-- .entry-content -->
+							<div class="entry-content home-page">
+								<p> Recent research [<a href="https://ojs.aaai.org//index.php/ICAPS/article/view/3549">1</a>, <a href="https://www.semanticscholar.org/paper/Using-Advice-in-Model-Based-Reinforcement-Learning-Icarte-Klassen/2629da3bb9ff6f4bea4b84ff8effb1320bdc68fe">2</a>, <a href="http://proceedings.mlr.press/v80/icarte18a.html">3</a>] shows how Logic can complement Reinforcement Learning algorithms to make the learning process faster and safer. In this article I will contextualize and critically evaluate the literature on this topic.</p>
+								<a href="works/logicRL.html" class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
+							</div>
+						</article>
+						<article class="post type-post hentry">
+							<!-- .entry-header -->
+							<header class="entry-header">
+								<h1 class="entry-title">
+									<a href="works/bitcoinRL.html" rel="bookmark">Algorithmic Trading - Bitcoin Price Prediction</a>
+								</h1>
+							</header>
+							<!-- .entry-header -->
+							 
+							 <!-- .entry-meta --> 
+							<footer class="entry-meta">
+								<ul>
+									<li><p href="#">LSTM</p></li>
+									<li><p href="#">TensorFlow</p></li>
+									<li><p href="#">scikit-learn</p></li>
+								</ul>		   
+							</footer>
+							<!-- .entry-meta -->  
+									  
+							<!-- .featured -->
+							<div class="featured-image">
+								<img src="img/price_pred.jpeg" alt="blog-image">
+							</div>
+							<!-- .featured -->
+							
+							<!-- .entry-content -->
+							<div class="entry-content home-page">
+								<p>In this post, I develop a Deep Learning and a Deep Reinforcement Learning algorithm to evaluate and test their ability to predict the price of Bitcoin.</p>
+								<a href="works/bitcoinRL.html" class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
+							</div>
+							<!-- .entry-content -->
+						</article>
+						<!--
+						<article class="post type-post hentry">
+							<!- - .entry-header - ->
+							<header class="entry-header">
+								<h1 class="entry-title">
+									<a><u>Thesis</u>: A Deeper dive into Safe Reinforcement Learning</a>
+								</h1>
+							</header>
+							<!- - .entry-header - ->
+							 
+							 <!- - .entry-meta - -> 
+							<footer class="entry-meta">
+								<ul>
+									<li><p href="#">AI Ethics</p></li>
+									<li><p href="#">Deep Learning</p></li>
+									<li><p href="#">Formal Logic</p></li>
+									<li><p href="#">OpenAI</p></li>
+								</ul>		   
+							</footer>
+							<!- - .entry-meta - ->  
+									  
+							<!- - .featured - ->
+							<div class="featured-image">
+								<img src="img/openai.gif" alt="blog-image">
+							</div>
+							<!- - .featured - ->
+							
+							<!- - .entry-content - ->
+							<div class="entry-content home-page">
+								<p>Inspired by the <a href="#lit-review">literature</a> my thesis will introduce a new approach for applying formal logic to the RL problem in order to expose the environment's reward structure and constrains so it can learn faster and safer.</p>
+								<a class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
+							</div>
+							<!- - .entry-content - ->
+						</article>
+						-->
+					</div>
+						<!-- .blog-posts -->
+				</div>
+				<!-- #content --> 
+			</div>
+		</div>
+	</section>
 
-	<div class="container-fluid">
-    	<div class="row hidden-sm hidden-xs col-sm-12" style="height:8px;"></div>
-	</div>
-
-	<header id="home">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">Jonathan Azpur</h1>
-                <h2 id="homeHeading">Machine Learning Engineer / Researcher</h2>
-                <hr>
-                <p><i>"You might not think that programmers are artist, but programming is an extremly creative profession. It's logic based creativity"</i> -  John Romero</p>
-                <a href="#intro" class="btn btn-primary-red btn-xl page-scroll">Find Out More</a>
-            </div>
-        </div>
-    </header>
-
-	<section class="bg-primary" id=""></section>
-    <section class="section-wrapper" id="intro">
-    	<div class="container">
-            <div class="row">
-            	<div class="col-xs-12 col-md-6">
-	            	<img src="img/profile2.png" class="img-responsive" alt="">
-                </div>
-                <div class="col-xs-12 col-md-6">
-	            	<h1>ABOUT ME</h1>
-	            	<p>My name is Jonathan Azpur, I am a Computer Science student based in Toronto, Canada. I started studying Computer Science because my goal was always to work in the fields of artificial intelligence, machine learning and data science. I have always been curious about every aspect of these fields of study.<br><br>
-	            	I possess excellent communication skills; I can liaise effectively with both clients and work colleagues. I have also the ability to work autonomously, under pressure and under tight deadlines. I am very passionate about my work, and I try to push myself everyday to be better at my craft.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section-wrapper" id="resume">
-    	<div class="container">
-            <div class="row">
-            	<div class="col-lg-12">
-	            	<h1>RESUME</h1>
-                </div>
-            </div>
-            <div class="row">
-            	<div class="col-xs-12 col-md-8 resume">
-	            	<h2>EMPLOYMENT</h2>
-	            	<img src="img/education.png" class="img-responsive position-left" alt="">
-	            	<ul class="employment">
-	            		<li class="row">
-                            <div class="col-xs-12 col-sm-3 dates">
-                                <h4>Sep 2019 - Present</h4>
-                            </div>
-                            <div class="col-xs-12 col-sm-9 description">
-                                <h4>Teacher Assistant</h4>
-                                <div class="subtitle">York University - Lassonde School of Engineering</div>
-                                <p>Teaching and assisting in various Artificial Intelligence, Machine Learning and programming courses. Responsible for laboratory sessions, helping students with course work, and grading exams, projects and assignments.</p>
-                                <ul>
-                                	<li>EECS 3401 Introduction to Artificial Intelligence</li>
-                                	<li>EECS 4401 Artificial Intelligence</li>
-                                	<li>EECS 4404 Machine Learning and Pattern Recognition</li>
-                                	<li>EECS 1022 Programming for Mobile Computing</li>
-                                </ul>
-                            </div>
-                        </li>
-						<li class="row">
-                            <div class="col-xs-12 col-sm-3 dates">
-                                <h4>Apr 2018 - Sep 2019</h4>
-                            </div>
-                            <div class="col-xs-12 col-sm-9 description">
-                                <h4>Data Scientist</h4>
-                                <div class="subtitle">Empire Life - Toronto</div>
-                                <p>Responsible for applying data mining and machine learning techniques to develop models to solve insurance business problems. I worked on projects for predicting long and short term disabilities based on lifestyle and Rx consumption, automation of the underwriting process for life insurance applications and provided recommendations to senior management on data science best practices and architecture.</p>
-                            </div>
-                        </li>
-                        <li class="row">
-                            <div class="col-xs-12 col-sm-3 dates">
-                                <h4>Apr 2016 - Sep 2017</h4>
-                            </div>
-                            <div class="col-xs-12 col-sm-9 description">
-                                <h4>Watson Commerce Analytics Engineer (Intern)</h4>
-                                <div class="subtitle">IBM Canada Software Lab - Toronto</div>
-                                <p>Provided development support for Watson Commerce users, specializing in its Search Engine and Storefront. Resolved development issues related to product architecture, performance, security, customizations and deployment for IBM customers.</p>
-                                <ul>
-                                	<li>Programming languages: Java, JavaScript, XML, HTML and SQL (Db2 and Oracle).</li>
-                                	<li>Web technologies: Java 2 Platform Enterprise Edition (J2EE) and Representational State Transfer (REST) framework.</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul><!-- /Employment section -->
-	            	<h2>EDUCATION</h2>
-	            	<img src="img/employment.jpg" class="img-responsive position-left" alt="">
-	            	<ul class="employment">
-	            		<li class="row">
-                            <div class="col-xs-12 col-sm-3 dates">
-                                <h4>2019 – Present</h4>
-                            </div>
-                            <div class="col-xs-12 col-sm-9 description">
-                                <h4>Master of Science - MS, Computer Science</h4>
-                                <div class="subtitle">York University - Lassonde School of Engineering</div>
-                                <p>Selected coursework:</p>
-                                <ul>
-                                	<li>EECS 6327 - Probabilistic Models & Machine Learning (A+)</li>
-									<li>EECS 6002 - Reinforcement Learning (A+)</li>
-									<li>EECS 6127 - Machine Learning Theory (A+)</li>
-									<li>EECS 6412 - Advanced Data Mining (A)</li>
-									<li>EECS 6414 - Data Science and Visualization (A)</li> 
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="row">
-                            <div class="col-xs-12 col-sm-3 dates">
-                                <h4>2013 – 2018</h4>
-                            </div>
-                            <div class="col-xs-12 col-sm-9 description">
-                                <h4>BSc. Computer Science, Honours</h4>
-                                <div class="subtitle">York University - Lassonde School of Engineering</div>
-                                <p>Graduated Member of Dean's Honour Roll. Selected coursework:</p>
-                                <ul>
-                                	<li>EECS 2001 - Introduction to the Theory of Computation (A)</li>
-									<li>EECS 4401 - Artificial Intelligence (A)</li>
-									<li>COGS 3260 - Cognition (A+)</li>
-									<li>EECS 4412 - Data Minning (B+)</li>
-									<li>EECS 4415 - Big Data Systems (A+)</li>
-									<li>EECS 4401 - Machine Learning & Pattern Recognition (A)</li>
-									<li>EECS 4080 - Computer Science Project (A)</li>
-									<li>EECS 4404 - Informations Network (A)</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul><!-- /Employment section -->
-                </div>
-                <div class="col-xs-12 col-md-4">
-	            	<h2>MY SKILLS</h2>
-	            	<ul class="my-skills">
-	            		<li>
-	            			<div class="skill-title">PYTHON</div>
-	            			<ul class="skill-levels">
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            			</ul>
-	            		</li>
-	            		<li>
-	            			<div class="skill-title">KERAS</div>
-	            			<ul class="skill-levels">
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            			</ul>
-	            		</li>
-	            		<li>
-	            			<div class="skill-title">TENSORFLOW</div>
-	            			<ul class="skill-levels">
-	            				<li class="active"><i class="fa fa-code fa-2" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class=""><i class="fa fa-code" aria-hidden="true"></i></li>
-	            			</ul>
-	            		</li>
-	            		<li>
-	            			<div class="skill-title">SCIKIT-LEARN</div>
-	            			<ul class="skill-levels">
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class=""><i class="fa fa-code" aria-hidden="true"></i></li>
-	            			</ul>
-	            		</li>
-	            		<li>
-	            			<div class="skill-title">PYTORCH</div>
-	            			<ul class="skill-levels">
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class=""><i class="fa fa-code" aria-hidden="true"></i></li>
-	            			</ul>
-	            		</li>
-	            		<li>
-	            			<div class="skill-title">SPARK</div>
-	            			<ul class="skill-levels">
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class=""><i class="fa fa-code" aria-hidden="true"></i></li>
-	            			</ul>
-	            		</li>
-	            		<li>
-	            			<div class="skill-title">R</div>
-	            			<ul class="skill-levels">
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class=""><i class="fa fa-code" aria-hidden="true"></i></li>
-	            			</ul>
-	            		</li>
-	            		<li>
-	            			<div class="skill-title">Theano</div>
-	            			<ul class="skill-levels">
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class=""><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class=""><i class="fa fa-code" aria-hidden="true"></i></li>
-	            			</ul>
-	            		</li>
-	            		<li>
-	            			<div class="skill-title">HADOOP & MAPREDUCE</div>
-	            			<ul class="skill-levels">
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class="active"><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class=""><i class="fa fa-code" aria-hidden="true"></i></li>
-	            				<li class=""><i class="fa fa-code" aria-hidden="true"></i></li>
-	            			</ul>
-	            		</li>
-	            	</ul>
-	            	<h2>MY LINKS</h2>
-	            	<ul class="my-skills">
-	            		<li>
-	            			<div class="skill-title">RESUME</div>
-	            			<ul class="skill-levels">
-	            				<li class="link"><a href="" download target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-	            			</ul>
-	            		</li>
-	            		<li>
-	            			<div class="skill-title">GITHUB</div>
-	            			<ul class="skill-levels">
-	            				<li class="link"><a href="https://github.com/jonaac" target="_blank"><i class="fa fa-git" aria-hidden="true"></i></a></li>
-	            			</ul>
-	            		</li>
-	            		<li>
-	            			<div class="skill-title">LinkedIn</div>
-	            			<ul class="skill-levels">
-	            				<li class="link"><a href="https://ca.linkedin.com/in/jonathanazpur" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-	            			</ul>
-	            		</li>
-	            	</ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section-wrapper" id="works">
-    	<div class="works-section-inner container">
-            <div class="row">
-            	<div class="col-xs-12">
-	            	<h1>WORKS</h1>
-                </div>
-            </div>
-	    	<div class="row">
-            	<div class="col-xs-12 col-lg-6">
-	            	<div class="caption-outside-wrapper">
-                        <div class="caption-title"><b>Thesis</b> - LTL Reward Specification in a CMDP</div>
-                        <div class="icons-line-wrapper">
-                            <div class="icons-line">
-                                <a href="" class="l-tooltip l-external-link"><i class="fa fa-external-link-square"></i></a>
-                                <a href="https://github.com/jonaac/LTL-Reward-Specification-in-a-CMDP" class="l-tooltip l-link"><i class="fa fa-git"></i></a>
-                            </div>
-                        </div>
-                        <p class="caption-description"><b>In Progress:</b> Improving the safety and learning performance of Reinforcement Learning agents with reward specification via Linear Temporal Logic in Constrained Markov Decission Processes.</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-lg-6">
-                	<div class="caption-outside-wrapper">
-                        <div class="caption-title">RL & Formal Logic languages: Literary Review</div>
-                        <div class="icons-line-wrapper">
-                            <div class="icons-line">
-                                <a href="img/final_paper.pdf" class="l-tooltip l-external-link"><i class="fa fa-external-link-square"></i></a>
-                                <a href="https://github.com/jonaac/RL-Formal-Logic-Literary-Review" class="l-tooltip l-link"><i class="fa fa-git"></i></a>
-                            </div>
-                        </div>
-                        <p class="caption-description">A literary review on the current research, scholar articles and resources that cover the conjoint topic of Reinforcement learning and Logic. The goal is to contextualize the existing literature on this topic, critically evaluate the literature and identify any potential gaps within the context of the existing literature.</p>
-                    </div>	
-                </div>
-            </div>
-            <div class="row">
-            	<div class="col-xs-12 col-lg-6">
-	            	<div class="caption-outside-wrapper">
-                        <div class="caption-title">Deep XGBoost Image Classifier</div>
-                        <div class="icons-line-wrapper">
-                            <div class="icons-line">
-                                <a href="img/project_2.pdf" class="l-tooltip l-external-link"><i class="fa fa-external-link-square"></i></a>
-                                <a href="https://github.com/jonaac/deep-xgboost-image-classifier" class="l-tooltip l-link"><i class="fa fa-git"></i></a>
-                            </div>
-                        </div>
-                        <p class="caption-description">This project examines the possibility of combining CNN with eXtreme Gradient Boosting (XGBoost). The suggested model would integrate a CNN as a feature extractor with XGBoost as a recognizer to classify images based on the features outputted from the CNN. The new algorithm was evaluated with the CIFAR-10 databases using three different CNN structures, a baseline CNN, VGG16 and ResNet50.</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-lg-6">
-                	<div class="caption-outside-wrapper">
-                        <div class="caption-title">Bitcoin price prediction with Deep RL</div>
-                        <div class="icons-line-wrapper">
-                            <div class="icons-line">
-                                <a href="" class="l-tooltip l-external-link"><i class="fa fa-external-link-square"></i></a>
-                                <a href="https://github.com/jonaac/Bitcoin-price-prediction-with-Deep-RL" class="l-tooltip l-link"><i class="fa fa-git"></i></a>
-                            </div>
-                        </div>
-                        <p class="caption-description">The goal of the project was to test and evaluate the viability of Deep Reinforcement Learning algorithms for Bitcoin price prediction.</p>
-                    </div>	
-                </div>
-            </div>
-            <div class="row">
-            	<div class="col-xs-12 col-lg-6">
-	            	<div class="caption-outside-wrapper">
-                        <div class="caption-title">Safety for Intelligent Agents</div>
-                        <div class="icons-line-wrapper">
-                            <div class="icons-line">
-                                <a href="img/report2-2.pdf" class="l-tooltip l-external-link"><i class="fa fa-external-link-square"></i></a>
-                                <a href="https://github.com/jonaac/Machine-Learning-Project" class="l-tooltip l-link"><i class="fa fa-git"></i></a>
-                            </div>
-                        </div>
-                        <p class="caption-description">Developed a reinforcement Learning grid-world simulation from scratch (no ML or RL libraries) to experiment and test safety methods for intelligent agents. A planetary robot that moves around in a grid world collecting mineral ore and has to avoid falling into craters.</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-lg-6">
-	            	<div class="caption-outside-wrapper">
-                        <div class="caption-title">RBC Athene</div>
-                        <div class="icons-line-wrapper">
-                            <div class="icons-line">
-                                <a href="https://github.com/TeamAthene/athene-rbc" class="l-tooltip l-link"><i class="fa fa-git"></i></a>
-                            </div>
-                        </div>
-                        <p class="caption-description">As part of the <a href="http://www.rbc.com/innovator/home.html" target="_blank">RBC NGI Challange</a>, we developed <a href="https://github.com/TeamAthene/athene-rbc" target="_blank"> RBC Athene</a>: <br> A web app that provided a single environment where business owners could access all the tools and information available from RBC.The application would combine data analytics and machine learning to create an environment that provided the best support possible for each user. Our team was selected as finalists (top 5) out of 35+ teams that participated.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	<section class="section-wrapper" id="contact">
-    	<div class="works-section-inner container">
-            <div class="row">
-            	<div class="col-xs-12">
-	            	<h1>CONTACTS</h1>
-	            </div>
-	        </div>
-	        <div class="double-part-wrapper">
-                <div class="title-part col-lg-4 col-xs-12">
-                    <div class="title">contact information</div>
-                    <div id="caption-featured" class="caption-outside-wrapper">
-                        <div class="caption-title">Jonathan Azpur</div>
-                        <ul class="list-with-icons contacts">
-                            <li><i class="fa fa-phone"></i>+1 (647) 784 48 24</li>
-                            <li><i class="fa fa-map-marker"></i>28 Ross Street, M5T 1Z9</li>
-                            <li><i class="fa"></i>Toronto ON, Canada</li>
-                            <li><i class="fa fa-envelope-o"></i>jazpurc@gmail.com</li>
-                            <li><i class="fa fa-globe"></i>www.jonaac.github.io</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="cover-part tabs col-lg-8 col-xs-12" id="map">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-primary" id=""></section>
-
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
-	<script>
-		function initMap() {
-	        var myLatLng = {lat: 43.65790, lng: -79.39690};
-	        var map = new google.maps.Map(document.getElementById('map'), {
-	          zoom: 16,
-	          center: myLatLng
-	        });
 
-	        var marker = new google.maps.Marker({
-	          position: myLatLng,
-	          map: map,
-	          title: 'Hello World!'
-	        });
-	    }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFOYbr-QXSrF05GO2SvXvrx4GDEKbyXKI&callback=initMap">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 

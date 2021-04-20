@@ -11,10 +11,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <!-- icons -->
-    <link href="assets/fonts-icons/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- for FF, Chrome, Opera -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<!-- icons -->
+	<link href="assets/fonts-icons/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- for FF, Chrome, Opera -->
 	<link rel="icon" type="image/png" href="" sizes="16x16">
 	<link rel="icon" type="image/png" href="" sizes="32x32">
 
@@ -38,201 +38,202 @@
 			<!-- Navigation Bar -->
 			<nav class="navbar navbar-static-top center" role="navigation">
 				<div class="navbar-header ">
-		          	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
-		            	<span class="sr-only">Toggle navigation</span>
-		            	<span class="icon-bar"></span>
-		            	<span class="icon-bar"></span>
-		            	<span class="icon-bar"></span>
-		          	</button>
-	      		</div>
-	      		<div class="collapse navbar-collapse navbar-menubuilder navbar-inner">
-		            <ul class="nav navbar-nav">
-		            	<li><a class="page-scroll"> Portfolio </a></li>
-		                <li><a class="page-scroll"> About Me </a></li>
-		                <li><a class="page-scroll"> Contact </a></li>
-		                <!--<li><a class="page-scroll" href="#"><b> BLOG </b></a></li>-->
-		            </ul>
-		        </div>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse navbar-menubuilder navbar-inner">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html" class="page-scroll">Projects</a></li>
+						<li><a href="aboutme.html" class="page-scroll">About Me</a></li>
+						<li><a href="contact.html" class="page-scroll">Contact </a></li>
+						<!--<li><a class="page-scroll" href="#"><b> BLOG </b></a></li>-->
+					</ul>
+				</div>
 			</nav>
 			<!-- /Navigation Bar -->
 		</div>
-    </header>
+	</header>
 
-    <section class="middle wrapper">
-	    <div class="row">
-	    	<div id="primary" class="site-content">
-                <!-- #content -->
-                <div id="content" role="main">
-                    <div class="blog-posts readable-content">
-                        <!-- .post -->
-                        <article class="post type-post hentry">
+	<section class="middle wrapper">
+		<div class="row">
+			<div id="primary" class="site-content">
+				<!-- #content -->
+				<div id="content" role="main">
+					<div class="blog-posts readable-content">
+						<!-- .post -->
+						<article class="post type-post hentry">
 							<!-- .entry-header -->
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a rel="bookmark">A New Model For Image Classification, CNN + XGBoost</a>
-                                </h1>
-                            </header>
-                            <!-- .entry-header -->
-                             
-                             <!-- .entry-meta --> 
-                            <footer class="entry-meta">
-                                <ul>
-                                	<li><p href="#">Computer Vision</p></li>
-                                	<li><p href="#">Deep Learning</p></li>
-                                	<li><p href="#">Tensorflow</p></li>
-                                </ul>			
-                            </footer>
-                            <!-- .entry-meta -->  
-                                      
-                    		<!-- .featured -->
-                            <div class="featured-image">
-                                <img src="img/deepxgboost.gif" alt="blog-image">
-                            </div>
-                            <!-- .featured -->
-                            
-                            <!-- .entry-content -->
-                            <div class="entry-content home-page">
-                                <p>I was first introduced to XGBoost when I was working as a data scientist. I was surprised at how accurate, efficient and interpretable it was. Naturally, I was very intrigued by recent research [1,2] suggesting the use of Convolutional Neural Networks (CNN) with XGboost for image classification with highly promising results. This inspired me to look into its potential for real world application, so I decided to further test this idea with more complex datasets and larger CNN structures.</p>
-                                <a class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
-                            </div>
-                            <!-- .entry-content -->
-                        </article>
-                        <article class="post type-post hentry">
-                            <!-- .entry-header -->
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a rel="bookmark">My Introduction to Safe Reinforcement Learning </a>
-                                </h1>
-                            </header>
-                            <!-- .entry-header -->
-                             
-                             <!-- .entry-meta --> 
-                            <footer class="entry-meta">
-                                <ul>
-                                    <li><p href="#">AI Ethics</p></li>
-                                    <li><p href="#">Q-Learning</p></li>
-                                    <li><p href="#">Python</p></li>
-                                </ul>           
-                            </footer>
-                            <!-- .entry-meta -->  
-                                      
-                            <!-- .featured -->
-                            <div class="featured-image">
-                                <img src="img/marsrover.jpg" alt="blog-image">
-                            </div>
-                            <!-- .featured -->
-                            
-                            <!-- .entry-content -->
-                            <div class="entry-content home-page">
-                                <p>Reinforcement learning (RL) algorithms are becoming more and more prevalent in todays society. The more integrated they become the more wary we should be of potential safety concerns. From an ethical perspective it is important that we develop algorithms that can provide certain safety assurances. We want to be able to avoid any potential harm when deploying them in real world scenarios. This project is my introduction to safe RL. I develop a grid-world simulation and a RL algorithm from scratch (no ML or RL libraries) to experiment and test safety methods.</p>
-                                <a class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
-                            </div>
-                            <!-- .entry-content -->
-                        </article>
-                        <article class="post type-post hentry">
-                            <!-- .entry-header -->
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a name="lit-review">In-depth analysis of Reinforcement Learning and Formal Logic</a>
-                                </h1>
-                            </header>
-                            <!-- .entry-header -->
-                             
-                             <!-- .entry-meta --> 
-                            <footer class="entry-meta">
-                                <ul style="margin-bottom: 10px">
-                                    <li><p href="#">Article</p></li>
-                                    <li><p href="#">Literary Review</p></li>
-                                    <li><p href="#">Reinforcement Learning</p></li>
-                                    <li><p href="#">Formal Logic</p></li>
-                                </ul>           
-                            </footer>
-                            <!-- .entry-meta -->  
-                                      
-                            <!-- .featured -->
-                            <div class="featured-image">
-                                <img src="img/LiteraryReview.jpg" alt="blog-image">
-                            </div>
-                            <!-- .featured -->
-                            
-                            <!-- .entry-content -->
-                            <div class="entry-content home-page">
-                                <p> When teaching a child how to perform a task we usually tell them what they should do, and what they should avoid. Now imagine how hindering it would be to learning if the child could only learn from the feedback of its own experiences. This is the same limitation Reinforcement Learning has when it comes to training. So, how can we introduce prior knowledge into the training process? Recent research has shown the potential use of formal logic as knowledge that can be used during RL training to make the process faster and safer. In this article I will contextualize and critically evaluate the literature on this topic. </p>
-                                <a class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
-                            </div>
-                            <!-- .entry-content -->
-                        </article>
-                        <article class="post type-post hentry">
-                            <!-- .entry-header -->
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a><u>Thesis</u>: A Deeper dive into Safe Reinforcement Learning</a>
-                                </h1>
-                            </header>
-                            <!-- .entry-header -->
-                             
-                             <!-- .entry-meta --> 
-                            <footer class="entry-meta">
-                                <ul>
-                                    <li><p href="#">AI Ethics</p></li>
-                                    <li><p href="#">Deep Learning</p></li>
-                                    <li><p href="#">Formal Logic</p></li>
-                                    <li><p href="#">OpenAI</p></li>
-                                </ul>           
-                            </footer>
-                            <!-- .entry-meta -->  
-                                      
-                            <!-- .featured -->
-                            <div class="featured-image">
-                                <img src="img/openai.gif" alt="blog-image">
-                            </div>
-                            <!-- .featured -->
-                            
-                            <!-- .entry-content -->
-                            <div class="entry-content home-page">
-                                <p>From an ethical perspective I believe we are morally obligated to ensure safe solutions when bringing forward any AI applications to the real world. From a developer's perpective I believe that part of optimizing a learning process is to be able to minimize safety violation during the training process. That is why for my thesis I am focusing on safe Reinforcement Learning. Inspired by the <a href="#lit-review">literature</a> my thesis will introduce a new approach for applying formal logic to the RL problem in order to expose the environment's reward structure and constrains so it can learn faster and safer.</p>
-                                <a class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
-                            </div>
-                            <!-- .entry-content -->
-                        </article>
-                        <article class="post type-post hentry">
-                            <!-- .entry-header -->
-                            <header class="entry-header">
-                                <h1 class="entry-title">
-                                    <a title="Permalink to Adaptive Vs. Responsive Layouts And Optimal Form Field Labels" rel="bookmark">Dipping my toes into Bitcoin Price Prediction</a>
-                                </h1>
-                            </header>
-                            <!-- .entry-header -->
-                             
-                             <!-- .entry-meta --> 
-                            <footer class="entry-meta">
-                                <ul>
-                                    <li><p href="#">Algorithmic Trading</p></li>
-                                    <li><p href="#">LSTM</p></li>
-                                    <li><p href="#">Reinforcement Learning</p></li>
-                                    <li><p href="#">Deep Learning</p></li>
-                                </ul>           
-                            </footer>
-                            <!-- .entry-meta -->  
-                                      
-                            <!-- .featured -->
-                            <div class="featured-image">
-                                <img src="img/price_pred.jpeg" alt="blog-image">
-                            </div>
-                            <!-- .featured -->
-                            
-                            <!-- .entry-content -->
-                            <div class="entry-content home-page">
-                                <p>The goal of the project was to test and evaluate the viability of Deep Reinforcement Learning algorithms for Bitcoin price prediction.</p>
-                                <a class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
-                            </div>
-                            <!-- .entry-content -->
-                        </article>
-                    </div>
-                        <!-- .blog-posts -->
-                </div>
-                <!-- #content --> 
-            </div>
+							<header class="entry-header">
+								<h1 class="entry-title">
+									<a href="works/deepxgboost.html" rel="bookmark">CNNs and Gradient Boosting for Image Classification</a>
+								</h1>
+							</header>
+							<!-- .entry-header -->
+							 
+							 <!-- .entry-meta --> 
+							<footer class="entry-meta">
+								<ul>
+									<li><p href="#">Computer Vision</p></li>
+									<li><p href="#">XGBoost</p></li>
+									<li><p href="#">TensorFlow</p></li>
+									<li><p href="#">Keras</p></li>
+								</ul>			
+							</footer>
+							<!-- .entry-meta -->  
+									  
+							<!-- .featured -->
+							<div class="featured-image">
+								<img src="img/deepxgboost.gif" alt="blog-image">
+							</div>
+							<!-- .featured -->
+							
+							<!-- .entry-content -->
+							<div class="entry-content home-page">
+								<p>Research [<a href="https://pubmed.ncbi.nlm.nih.gov/30713552/">1</a>, <a href="https://dl.acm.org/doi/10.1145/3123266.3127902">2</a>, <a href="https://link.springer.com/chapter/10.1007/978-3-319-64185-0_28">3</a>] shows you can combine XGBoost and CNNs to solve non-image classification problems. In this post, I adapt this model to show a shockingly powerful method for image classification.</p>
+								<a href="works/deepxgboost.html" class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
+							</div>
+							<!-- .entry-content -->
+						</article>
+						<article class="post type-post hentry">
+							<!-- .entry-header -->
+							<header class="entry-header">
+								<h1 class="entry-title">
+									<a href="works/safeRL.html" rel="bookmark">An Introduction to Safe Reinforcement Learning</a>
+								</h1>
+							</header>
+							<!-- .entry-header -->
+							 
+							<!-- .entry-meta --> 
+							<footer class="entry-meta">
+								<ul>
+									<li><p href="#">AI Ethics</p></li>
+									<li><p href="#">Q-Learning</p></li>
+									<li><p href="#">Python</p></li>
+								</ul>		   
+							</footer>
+							<!-- .entry-meta -->  
+									  
+							<!-- .featured -->
+							<div class="featured-image">
+								<img src="img/marsrover.jpg" alt="blog-image">
+							</div>
+							<!-- .featured -->
+							
+							<!-- .entry-content -->
+							<div class="entry-content home-page">
+								<p>This project is my introduction to safe Reinforcement Learning. For this post, I develop a grid-world simulation and a RL algorithm from scratch to experiment with safety RL methods.</p>
+								<a href="works/safeRL.html" class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
+							</div>
+							<!-- .entry-content -->
+						</article>
+						<article class="post type-post hentry">
+							<!-- .entry-header -->
+							<header class="entry-header">
+								<h1 class="entry-title">
+									<a href="works/logicRL.html" name="lit-review">In-depth analysis of Reinforcement Learning and Formal Logic</a>
+								</h1>
+							</header>
+							<!-- .entry-header -->
+							 
+							 <!-- .entry-meta --> 
+							<footer class="entry-meta">
+								<ul style="margin-bottom: 10px">
+									<li><p href="#">Article</p></li>
+									<li><p href="#">Literary Review</p></li>
+									<li><p href="#">Reinforcement Learning</p></li>
+									<li><p href="#">Logic</p></li>
+								</ul>		   
+							</footer>
+							<!-- .entry-meta -->  
+									  
+							<!-- .featured -->
+							<div class="featured-image">
+								<img src="img/LiteraryReview.jpg" alt="blog-image">
+							</div>
+							<!-- .featured -->
+							
+							<!-- .entry-content -->
+							<div class="entry-content home-page">
+								<p> Recent research [<a href="https://ojs.aaai.org//index.php/ICAPS/article/view/3549">1</a>, <a href="https://www.semanticscholar.org/paper/Using-Advice-in-Model-Based-Reinforcement-Learning-Icarte-Klassen/2629da3bb9ff6f4bea4b84ff8effb1320bdc68fe">2</a>, <a href="http://proceedings.mlr.press/v80/icarte18a.html">3</a>] shows how Logic can complement Reinforcement Learning algorithms to make the learning process faster and safer. In this article I will contextualize and critically evaluate the literature on this topic.</p>
+								<a href="works/logicRL.html" class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
+							</div>
+						</article>
+						<article class="post type-post hentry">
+							<!-- .entry-header -->
+							<header class="entry-header">
+								<h1 class="entry-title">
+									<a href="works/bitcoinRL.html" rel="bookmark">Algorithmic Trading - Bitcoin Price Prediction</a>
+								</h1>
+							</header>
+							<!-- .entry-header -->
+							 
+							 <!-- .entry-meta --> 
+							<footer class="entry-meta">
+								<ul>
+									<li><p href="#">LSTM</p></li>
+									<li><p href="#">TensorFlow</p></li>
+									<li><p href="#">scikit-learn</p></li>
+								</ul>		   
+							</footer>
+							<!-- .entry-meta -->  
+									  
+							<!-- .featured -->
+							<div class="featured-image">
+								<img src="img/price_pred.jpeg" alt="blog-image">
+							</div>
+							<!-- .featured -->
+							
+							<!-- .entry-content -->
+							<div class="entry-content home-page">
+								<p>In this post, I develop a Deep Learning and a Deep Reinforcement Learning algorithm to evaluate and test their ability to predict the price of Bitcoin.</p>
+								<a href="works/bitcoinRL.html" class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
+							</div>
+							<!-- .entry-content -->
+						</article>
+						<!--
+						<article class="post type-post hentry">
+							<!- - .entry-header - ->
+							<header class="entry-header">
+								<h1 class="entry-title">
+									<a><u>Thesis</u>: A Deeper dive into Safe Reinforcement Learning</a>
+								</h1>
+							</header>
+							<!- - .entry-header - ->
+							 
+							 <!- - .entry-meta - -> 
+							<footer class="entry-meta">
+								<ul>
+									<li><p href="#">AI Ethics</p></li>
+									<li><p href="#">Deep Learning</p></li>
+									<li><p href="#">Formal Logic</p></li>
+									<li><p href="#">OpenAI</p></li>
+								</ul>		   
+							</footer>
+							<!- - .entry-meta - ->  
+									  
+							<!- - .featured - ->
+							<div class="featured-image">
+								<img src="img/openai.gif" alt="blog-image">
+							</div>
+							<!- - .featured - ->
+							
+							<!- - .entry-content - ->
+							<div class="entry-content home-page">
+								<p>Inspired by the <a href="#lit-review">literature</a> my thesis will introduce a new approach for applying formal logic to the RL problem in order to expose the environment's reward structure and constrains so it can learn faster and safer.</p>
+								<a class="more-link">Continue reading<span class="meta-nav">→</span></a></p>
+							</div>
+							<!- - .entry-content - ->
+						</article>
+						-->
+					</div>
+						<!-- .blog-posts -->
+				</div>
+				<!-- #content --> 
+			</div>
 		</div>
 	</section>
 
@@ -240,7 +241,7 @@
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/vendors/scrolloverflow.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 

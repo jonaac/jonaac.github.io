@@ -107,3 +107,24 @@ nav.navbar {
 .featured-image { max-width: 432px; text-align:center; margin:0 auto;}
 .featured-image img {}
 .site-content h1 a:active { border-bottom:1px dotted #ccc; }
+
+.entry-content.work { text-align: justify; }
+.entry-content .featured-image { padding:1em 0 0 0; max-width: 500px;}
+.entry-content .featured-image.list { max-width: 100%;}
+.entry-content .featured-image ul{list-style-type:none; margin:0; padding:0;}
+.entry-content .featured-image li{max-width: 350px; display:inline-block; padding: 0px 10px;}
+.entry-content .entry-meta { padding:1.5em 0 1em 0; }
+
+.abstract {font-style: italic; padding: 0 0 1.2em 0; font-size: 90%}
+.abstract.work:after {content: "";display: block; margin: 0 auto; width: 80%; border-bottom: 1px solid #aaa; padding-top: 2.4em}
+
+/* ABOUT ME */
+/* -------------------------------------------- */
+.aboutme { text-align: justify; }
+.aboutme .entry-content ul{list-style-type:none; margin:0; padding:1em 0 0 0;}
+.aboutme .description {margin:0.5em 0 1.2em 0;}
+.aboutme .entry-content .degree{padding:0;}
+
+.profile-image img {border-radius: 50%; max-width: 250px; text-align:center; margin:0 auto;}
+
+
