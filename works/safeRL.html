@@ -100,12 +100,12 @@
 							<!-- .entry-content -->
 							<div class="entry-content work">
 
-								<p class="abstract"> With Reinforcement Learning's (RL) increases in popularity, the more research there is concerning the safety of RL algorithms. Both considering the agent's safety and the safety of any element in the agent's environment (objects, humans, animals, etc.). This project is my introduction to RL and safe RL. I develop two grid-world simulation and RL algorithms from scratch, with no ML or RL libraries, to experiment and test safety methods. After training and deploying the agents, I was able to achieve my goal. For every environment, the agent was capable of learning an optimal policy while staying safe. <a href="https://github.com/jonaac/Reinforcement-Learning-Safety-Project" class="more-link">Github Reposiroty <span class="meta-nav"> →</span></a>
+								<p class="abstract"> This project was my introduction to RL and safe RL. I develop two grid-world simulations and an RL algorithm from scratch, with no ML or RL libraries, to experiment and test safety methods. For each simulation, the agent was capable of learning an optimal policy while staying safe. I developed this project during the last year of my undergraduate program, and it was the foundation to developing my Master's <a href="../thesis.html">thesis</a>. <a href="https://github.com/jonaac/Reinforcement-Learning-Safety-Project" class="more-link">Github Reposiroty <span class="meta-nav"> → </span></a>
 								</p>
 
 								<h2 style="text-align: center">An Introduction to Safe Reinforcement Learning</h2>
 
-								<p class="article">The use of Reinforcement Learning (RL) is becoming more widespread. With RL's rise in popularity, we have also seen a growing interest in studying the safety of RL algorithms. On one hand, we have the safety of the learning agent during training. On the other hand, we want to ensure that the agent is safe to deploy. For example, we want to safely train an autonomous car and ensure that it won't be responsible for any accidents when deployed.</p>
+								<p class="article">The use of Reinforcement Learning (RL) is becoming more widespread. With RL's rise in popularity, we have also seen a growing interest in studying the safety of RL algorithms. We want the learning agent to be safe during training and we want to ensure that the agent is safe to deploy. For example, we want to safely train an autonomous car and ensure that it won't be responsible for any accidents when deployed.</p>
 
 								<div class="featured-image">
 									<img src="../img/tesla.jpg" alt="blog-image">
@@ -114,11 +114,11 @@
 									Example of an autnomous car safely deployed on a urban environment.
 								</footer>
 
-								<p class="article">Safe Reinforcement learning has its complexities. Given that RL is based on exploring and experiencing, how can an agent learn to be safe without experiencing unsafe scenarios? Furthermore, for some tasks, the threat of safety may be very infrequent. It is hard to ensure that training sets include enough unsafe states to ensure that safety-preserving behaviors are learned. Also, some reinforcement learning techniques construct their own representations of the domain (e.g., deep learning). It is hard to ensure that these representations carry the necessary information to ensure safety and that the resulting policies/strategies are safe.</p>
+								<p class="article">Safe Reinforcement learning has its complexities. Reinforcement learning is based on exploration and exploitation. How can an agent learn to be safe without experiencing unsafe scenarios? Furthermore, for some tasks, the threat of safety may be very infrequent. It is hard to ensure that training sets will include enough unsafe scenarios to ensure that safety-preserving behaviors are learned. Also, some reinforcement learning techniques construct their own representations of the domain (e.g., deep learning). It is hard to ensure that these representations carry the necessary information to ensure safety and that the resulting policies/strategies are safe.</p>
 
-								<p class="article">Reinforcement learning and Safe RL are fields of study that I am very interested in. After learning more about RL [<a href="http://incompleteideas.net/book/the-book.html" >1</a>] and the work being done on safe RL [<a href="https://www.jmlr.org/papers/volume16/garcia15a/garcia15a.pdf" >2</a>], I thought it would be a good idea to develop some algorithms myself. For this project, I develop two grid-world environments and an RL algorithm. Everything is developed from scratch, meaning that I didn't use any ML or RL libraries.
+								<p class="article">Reading more about RL [<a href="http://incompleteideas.net/book/the-book.html" >1</a>] and the work being done on safe RL [<a href="https://www.jmlr.org/papers/volume16/garcia15a/garcia15a.pdf" >2</a>] caught my interest. I thought it would be a good idea to develop some algorithms myself. For this project, I develop an RL algorithm and two grid-world simulations for testing purposes. Everything was developed from scratch, meaning that I didn't use any ML or RL libraries.</p>
 
-								<p class="article">Both environments involve 5x4 grids limited by four borders. The agent can move from one grid to another by performing 1 out of 4 possible actions (Up, Down, Left, and Right). The first set of grid-world environments are Navigation simulations. It consists of a planetary robot looking to travel from a starting point to a specified target destination while trying not to fall into craters.</p>
+								<p class="article">Both simulations involve 5x4 grids limited by four borders. The agent can move from one grid to another by performing 1 out of 4 possible actions (Up, Down, Left, and Right). The first set of grid-world environments are Navigation simulations. It consists of a planetary robot looking to travel from a starting point to a specified target destination while trying not to fall into craters.</p>
 
 								<p class="article">The second set of grid-world environments are Mineral Collection simulations. It consists of a planetary robot looking to collect mineral ore and bringing it back to its starting position while trying not to fall into craters. The agent will automatically pick up the ore when it reaches its location. </p>
 
@@ -132,7 +132,7 @@
 									<b>Navigation</b>, We have the agent/planetary robot (blue), the starting point (purple), the target (green) and the craters (red). <b>Mineral Collection</b>, We have the agent/planetary robot (blue), the start & end point (purple), the mineral ore (yellow) and the craters (red).
 								</footer>
 
-								<p class="article">I implemented the Q-learning algorithm presented in Richard Sutton's textbook [<a href="http://incompleteideas.net/book/the-book.html" >1</a>]. It helped me better understand Reinforcement Learning and the difference between off-policy and on-policy learning. The Q-learning algorithm should be able to solve any discrete RL problem. It only requires that the MDP has a finite set of states, a finite set of actions, a set of rewards, and a transition matrix.</p>
+								<p class="article">I implemented the Q-learning algorithm presented in Richard Sutton's textbook [<a href="http://incompleteideas.net/book/the-book.html" >1</a>]. The Q-learning algorithm I developed is meant to solve any discrete RL problem. It only requires that the MDP has a finite set of states, a finite set of actions, a set of rewards, and a transition matrix.</p>
 
 								<div class="featured-image">
 									<img src="../img/qlearning.png" alt="blog-image">
@@ -141,9 +141,9 @@
 									Pseudo-Code for the Q-learning algorithm.
 								</footer>
 
-								<p class="article"> In terms of safety, for this project, I focused on making sure that the agent is capable of learning a policy that is safe to deploy. More specifically, make sure that the agent will not fall into any crater on deployment. In our MDP the unsafe states will be represented as states with negative rewards associated with them. The hypothesis is that by maximizing the expected reward the agent will avoid those states that provide a negative reward. For both simulations, the craters have a negative reward, and the target destination has a positive reward. All other states have a reward of 0. In the Mineral Collection environment picking up the mineral ore also has a positive reward. </p>
+								<p class="article"> I focused on making sure that the agent was capable of learning a policy that was safe to deploy. Specifically, to make sure that the agent will not fall into any crater on deployment. In our MDP the unsafe states will be represented as states that return negative rewards. I hypothesized that because the agent was trying to maximize cumulative reward it would try to avoid negative rewards. For both simulations, the craters have a negative reward, and the target destination has a positive reward. All other states have a reward of 0. In the Mineral Collection environment picking up the mineral ore also has a positive reward. </p>
 
-								<p class="article">After developing, training, and deploying the agents I was able to achieve my goal. For every iteration of the Navigation and Mineral Collection environments, the agent learned an optimal policy without falling into any crater. The key was to test different values for the rewards, and parameter tuning the Q-learning algorithm. If the punishment was too high, the agent would mainly focus on not falling and would avoid its actual goal or it would learn a non-optimal policy. If the reward was too high the agent would ignore the craters and the resulting deployment would be very unsafe.</p>
+								<p class="article">After developing, training, and deploying the agents I was able to achieve my goal. For every iteration of the Navigation and Mineral Collection environments, the agents learned an optimal and safe policy. The key was to test different values for the rewards, and parameter tuning the Q-learning algorithm. If the punishment was set too high, the agent would focus on not falling and would avoid its actual goal, or it would learn a non-optimal policy. If the reward was too high the agent would ignore the craters and the resulting policy would be unsafe.</p>
 
 								<div class="featured-image list">
 									<ul>
@@ -155,7 +155,7 @@
 									The agent deployed in both environments after training with Q-learning algorithm.
 								</footer>
 
-								<p class="article">Even though my approach works, it had a lot to do with manually tunning several parameters to succeed. As mentioned earlier, this project is my introduction to Reinforcement Learning and Safe RL. In the future, I will be focusing on more complex safety strategies for RL and work on the agent's safety during training.</p>
+								<p class="article">Even though my approach works, it had a lot to do with manually tunning several parameters to succeed. As mentioned earlier, this project is my introduction to Reinforcement Learning and Safe RL. Currently, my <a href="../thesis.html">work</a> focuses on more complex safety strategies and the agent's safety during training.</p>
 
 							</div>
 							<!-- .entry-content -->

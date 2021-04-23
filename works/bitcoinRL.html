@@ -99,14 +99,14 @@
 							
 							<!-- .entry-content -->
 							<div class="entry-content work">
-								<p class="abstract">The concept of using algorithms to ease decision-making in financial markets is nothing new. The term algorithmic trading was coined back in the 90s. Numerous firms have been using different technologies to make investment decisions since then. In this project, I take a dataset of Bitcoin prices, preprocess the data, and implement two LSTM models. The first model predicts Bitcoin's day-to-day price. The second model predicts Bitcoin's day-to-day price differences. Results showed that the first modeled predictions were able to follow the trend and direction of pricing correctly. However, there is a considerable mismatch between the predicted values and the actual values. The second model's predictions were more accurate.<a href="https://github.com/jonaac/Bitcoin-price-prediction-with-Deep-RL" class="more-link">Github Reposiroty <span class="meta-nav"> →</span></a>
+								<p class="abstract">In this project, I take a dataset of Bitcoin prices, preprocess the data, and implement two LSTM models. The first model predicts Bitcoin's day-to-day price. The second model predicts Bitcoin's day-to-day price differences. Results showed that the first modeled predictions were able to follow the trend and direction of pricing correctly. However, there is a considerable mismatch between the predicted values and the actual values. The model was more accurate, but not significantly.<a href="https://github.com/jonaac/Bitcoin-price-prediction-with-Deep-RL" class="more-link">Github Reposiroty <span class="meta-nav"> →</span></a>
 								</p>
 
 								<h2 style="text-align: center">Algorithmic Trading - Bitcoin Price Prediction</h2>
 
-								<p class="article">I wanted to dip my toes in algorithmic trading. So, I decided to develop a Recurrent Neural Network (RNN) to predict Bitcoin pricing. Bitcoin (BTC-USD) has been finding more mainstream uses in recent years. More and more companies aside from traditional payment processors and facilitators are starting to 'accept' Bitcoin, so I thought it would be a good idea to use it as my dataset.</p>
+								<p class="article">I wanted to dip my toes in the field of algorithmic trading. So, I decided to develop a machine learning model to predict the price of Bitcoin. Bitcoin (BTC-USD) has been finding more mainstream uses in recent years. More and more companies aside from traditional payment processors and facilitators are starting to 'accept' Bitcoin, so I thought it would be a good idea to use it as my dataset.</p>
 
-								<p class="article">RNNs have demonstrated great success in sequence labeling and prediction tasks such as handwriting recognition and language modeling. RNNs contain cycles that feed the network activation functions from a previous time step to the network to influence predictions at the current time step. The activation functions are stored in the internal states of the network to hold long-term temporal contextual information. This mechanism allows RNNs to exploit a dynamically changing contextual window over the input sequence history rather than a static one, like in the fixed-sized window used with feed-forward networks. Long Short-Term Memory (LSTM) neural networks are a particular form of RNNs that have been popular in algorithmic trading.</p>
+								<p class="article">Recurrent Neural Networks (RNN) have demonstrated great success in sequence labeling and prediction tasks such as handwriting recognition and language modeling. RNNs contain cycles that feed the network activation functions from a previous time step to influence predictions at the current time step. The activation functions are stored in the internal states of the network to hold long-term temporal contextual information. This mechanism allows RNNs to exploit a dynamically changing contextual window over the input sequence history rather than a static one, like in the fixed-sized window used with feed-forward networks. Long Short-Term Memory (LSTM) networks are a particular form of RNNs that have been popular in algorithmic trading. I will be using LSTM networks to develop my Bitcoin prediction models.</p>
 
 								<div class="featured-image">
 									<img src="../img/lstmnn.png" alt="blog-image">
@@ -115,7 +115,7 @@
 									LSTM architecture, a special form of Recurrent Neural Networks
 								</footer>
 
-								<p class="article">I implemented the LSTM model using the TensorFlow library with the integrated Keras package. The input is the closing price from the previous three days. The output is supposed to be the current closing price. The network contains an LSTM layer with a 0.2 drop-out to deal with overfitting, then again, an LSTM layer following with a dense layer. The results show that the model can follow the trend and direction accurately. However, there is a considerable mismatch between the predicted values and the actual values.</p>
+								<p class="article">I implemented the LSTM model using the TensorFlow library with the integrated Keras package. The input is the closing price from the previous three days. The output is supposed to be the current closing price. The network contains two consecutive LSTM layers with a 0.2 drop-out on the first one to deal with overfitting, followed by a dense. The results showed that the model can follow the trend and direction of pricing accurately. However, there is a considerable mismatch between the predicted values and the actual values.</p>
 
 								<div class="featured-image">
 									<img src="../img/lstmprediction.png" alt="blog-image">
@@ -124,7 +124,7 @@
 									LSTM prediction of Bitcoin's day-to-day price prediction.
 								</footer>
 
-								<p class="article">Even though the model was able to follow the trend and direction correctly, for the most part, we observed a serious problem with our dataset. The price time series suffers from a high auto-correlation. This usually causes models to overfit. On the other hand, I observed that if I calculated the day-to-day price changes it would take care of the auto-correlation issue. So, I implemented an LSTM to predict price change rather than the actual price. This model's predictions were more accurate.</p>
+								<p class="article">Even though the model was able to follow the trend and direction of pricing correctly, for the most part, we observed a serious problem with our dataset. The pricing data was highly auto-correlated. This usually causes models to overfit. After some data processing I observed that if I calculated the day-to-day price changes and predicted those values instead it would take care of the auto-correlation issue. So, I implemented an LSTM to predict price change rather than the actual price. This model's predictions were more accurate, but not significantly.</p>
 
 								<div class="featured-image">
 									<img src="../img/lstmchangeprediction.png" alt="blog-image">
@@ -133,7 +133,7 @@
 									LSTM predictions of Bitcoin's day-to-day price differences.
 								</footer>
 
-								<p class="article">Given both models and their predictions, it would be interesting to see which one is better for trading purposes. I would have to define the criteria to buy, sell, or keep bitcoin based on the predictions made by the LSTM models. Maybe a good approach would be to have a Reinforcement Learning agent whose actions are Buy, Sell or Keep learn how to maximize profit based on the LSTM forecast.</p>
+								<p class="article">Given both models and their predictions, it would be interesting to see which one is better for trading purposes. I would have to define a criteria to buy, sell, or keep Bitcoin based on the predictions made by the LSTM models. Maybe a good approach would be to have a Reinforcement Learning agent whose actions are Buy, Sell or Keep learn how to maximize profit based on the LSTM forecast.</p>
 
 							</div>
 							<!-- .entry-content -->
