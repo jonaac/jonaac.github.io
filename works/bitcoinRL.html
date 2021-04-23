@@ -101,14 +101,14 @@
 							
 							<!-- .entry-content -->
 							<div class="entry-content work">
-								<p class="abstract"> The concept of using algorithms to ease the decision making in financial markets is nothing new, in fact the term algorithmic trading was coined back in 90s and numerous firms have been using different technologies to make investment decisions since then. In this project, I take a dataset of bitcoin prices, preprocess the data, and implement two LSTM models. The first model predicts bitcoin's day-to-day price and the second model predicts day-to-day price differences. Results showed that the first model'd predictions were able to follow the trend and direction of pricing correctly, however there is a considerable mismatch in the predicted values and the true values. The second model's predictions were more accurate.<a href="https://github.com/jonaac/Bitcoin-price-prediction-with-Deep-RL" target="_blank" class="more-link">Github Reposiroty <span class="meta-nav"> →</span></a>
+								<p class="abstract">The concept of using algorithms to ease decision-making in financial markets is nothing new. The term algorithmic trading was coined back in the 90s. Numerous firms have been using different technologies to make investment decisions since then. In this project, I take a dataset of bitcoin prices, preprocess the data, and implement two LSTM models. The first model predicts bitcoin's day-to-day price. The second model predicts day-to-day price differences. Results showed that the first modeled predictions were able to follow the trend and direction of pricing correctly. However, there is a considerable mismatch between the predicted values and the actual values. The second model's predictions were more accurate.<a href="https://github.com/jonaac/Bitcoin-price-prediction-with-Deep-RL" target="_blank" class="more-link">Github Reposiroty <span class="meta-nav"> →</span></a>
 								</p>
 
 								<h2 style="text-align: center">Algorithmic Trading - Bitcoin Price Prediction</h2>
 
-								<p class="article">I wanted to dip my toes in the field of algorithmic trading so I decided to develop a Recurrent Neural Network (RNN) to predict Bitcoin pricing. Bitcoin (BTC-USD) has been finding more mainstream uses during recent years. More and more companies aside from traditional payment processors and facilitators are starting to 'accept' Bitcoin, so I thought it would be a good idea to use it as my dataset.</p>
+								<p class="article">I wanted to dip my toes in algorithmic trading. So, I decided to develop a Recurrent Neural Network (RNN) to predict Bitcoin pricing. Bitcoin (BTC-USD) has been finding more mainstream uses in recent years. More and more companies aside from traditional payment processors and facilitators are starting to 'accept' Bitcoin, so I thought it would be a good idea to use it as my dataset.</p>
 
-								<p class="article">RNNs have demonstrated great success in sequence labeling and prediction tasks such as handwriting recognition and language modeling. RNNs contain cycles that feed the network activation functions from a previous time step as inputs to the network to influence predictions at the current time step. These activation functions are stored in the internal states of the network which can in principle hold long-term temporal contextual information. This mechanism allows RNNs to exploit a dynamically changing contextual window over the input sequence history rather than a static one as in the fixed-sized window used with feed-forward networks. Long Short-Term Memory (LSTM) neural networks are a special form of RNNs that have been popular in  algorithmic traiding.</p>
+								<p class="article">RNNs have demonstrated great success in sequence labeling and prediction tasks such as handwriting recognition and language modeling. RNNs contain cycles that feed the network activation functions from a previous time step to the network to influence predictions at the current time step. The activation functions are stored in the internal states of the network to hold long-term temporal contextual information. This mechanism allows RNNs to exploit a dynamically changing contextual window over the input sequence history rather than a static one, like in the fixed-sized window used with feed-forward networks. Long Short-Term Memory (LSTM) neural networks are a particular form of RNNs that have been popular in algorithmic trading.</p>
 
 								<div class="featured-image">
 									<img src="../img/lstmnn.png" alt="blog-image">
@@ -117,7 +117,7 @@
 									LSTM architecture, a special form of Recurrent Neural Networks
 								</footer>
 
-								<p class="article">I implemented the LSTM model using the tensorflow library with the integarated Keras package. The input of the network is the closing price from the prioir three days and the output is supposed to be the closing price of the next day. The network contains a LSTM layer with a 0.2 drop-out to deal with overfitting, then again, an LSTM layer following with a dense layer. The results show that the model can follow the trend and direction correctly for the most part however there is a considerable mismatch in the predicted values and the true values.</p>
+								<p class="article">I implemented the LSTM model using the TensorFlow library with the integrated Keras package. The input is the closing price from the previous three days. The output is supposed to be the current closing price. The network contains an LSTM layer with a 0.2 drop-out to deal with overfitting, then again, an LSTM layer following with a dense layer. The results show that the model can follow the trend and direction accurately. However, there is a considerable mismatch between the predicted values and the actual values.</p>
 
 								<div class="featured-image">
 									<img src="../img/lstmprediction.png" alt="blog-image">
@@ -126,7 +126,7 @@
 									LSTM day-to-day price prediction.
 								</footer>
 
-								<p class="article">Even though the model was able to follow the trend and direction correctly for the most part, we observed a serious problem with our dataset, the price time series suffers from a high auto-correlation. This will cause the model to overfit. On the other hand, I observed that the bitcoin day-to-day price differences are not autocorrelated at all. So, I implemented the LSTM to predict change rather than the actual price, in order to remove the influence of autocorrelation. The model's prediction were more accurate and could be improved with more extensive hyper-parameter tunning.</p>
+								<p class="article">Even though the model was able to follow the trend and direction correctly, for the most part, we observed a serious problem with our dataset. The price time series suffers from a high auto-correlation. This usually causes models to overfit. On the other hand, I observed that if I calculated the day-to-day price changes it would take care of the auto-correlation issue. So, I implemented an LSTM to predict price change rather than the actual price. This model's predictions were more accurate.</p>
 
 								<div class="featured-image">
 									<img src="../img/lstmchangeprediction.png" alt="blog-image">
@@ -135,7 +135,7 @@
 									LSTM bitcoin day-to-day price differences prediction.
 								</footer>
 
-								<p class="article">Given both models and their predictions it would be interesting to see which one is better for trading purposes. I would have to define a criteria to buy, sell, or keep bitcoin based on the predictions made by the LSTM models. Maybe a good approach would be to have a Renforcement Learning agetn who's action are Buy, Sell or Keep learn how to maximize profit based on the LSTM forcast.</p>
+								<p class="article">Given both models and their predictions, it would be interesting to see which one is better for trading purposes. I would have to define the criteria to buy, sell, or keep bitcoin based on the predictions made by the LSTM models. Maybe a good approach would be to have a Reinforcement Learning agent whose actions are Buy, Sell or Keep learn how to maximize profit based on the LSTM forecast.</p>
 
 							</div>
 							<!-- .entry-content -->
