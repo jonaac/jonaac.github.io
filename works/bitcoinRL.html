@@ -34,9 +34,7 @@
 				<h1 class="site-title">
 					<a href="../index.html"> Jona </a>
 				</h1>
-				<h2 class="site-description">
-					Machine Learning Engineer
-				</h2>
+
 			</hgroup>
 			<!-- Navigation Bar -->
 			<nav class="navbar navbar-static-top center" role="navigation">
@@ -101,7 +99,7 @@
 							
 							<!-- .entry-content -->
 							<div class="entry-content work">
-								<p class="abstract">The concept of using algorithms to ease decision-making in financial markets is nothing new. The term algorithmic trading was coined back in the 90s. Numerous firms have been using different technologies to make investment decisions since then. In this project, I take a dataset of bitcoin prices, preprocess the data, and implement two LSTM models. The first model predicts bitcoin's day-to-day price. The second model predicts day-to-day price differences. Results showed that the first modeled predictions were able to follow the trend and direction of pricing correctly. However, there is a considerable mismatch between the predicted values and the actual values. The second model's predictions were more accurate.<a href="https://github.com/jonaac/Bitcoin-price-prediction-with-Deep-RL" target="_blank" class="more-link">Github Reposiroty <span class="meta-nav"> →</span></a>
+								<p class="abstract">The concept of using algorithms to ease decision-making in financial markets is nothing new. The term algorithmic trading was coined back in the 90s. Numerous firms have been using different technologies to make investment decisions since then. In this project, I take a dataset of Bitcoin prices, preprocess the data, and implement two LSTM models. The first model predicts Bitcoin's day-to-day price. The second model predicts Bitcoin's day-to-day price differences. Results showed that the first modeled predictions were able to follow the trend and direction of pricing correctly. However, there is a considerable mismatch between the predicted values and the actual values. The second model's predictions were more accurate.<a href="https://github.com/jonaac/Bitcoin-price-prediction-with-Deep-RL" class="more-link">Github Reposiroty <span class="meta-nav"> →</span></a>
 								</p>
 
 								<h2 style="text-align: center">Algorithmic Trading - Bitcoin Price Prediction</h2>
@@ -123,7 +121,7 @@
 									<img src="../img/lstmprediction.png" alt="blog-image">
 								</div>
 								<footer class="entry-meta">
-									LSTM day-to-day price prediction.
+									LSTM prediction of Bitcoin's day-to-day price prediction.
 								</footer>
 
 								<p class="article">Even though the model was able to follow the trend and direction correctly, for the most part, we observed a serious problem with our dataset. The price time series suffers from a high auto-correlation. This usually causes models to overfit. On the other hand, I observed that if I calculated the day-to-day price changes it would take care of the auto-correlation issue. So, I implemented an LSTM to predict price change rather than the actual price. This model's predictions were more accurate.</p>
@@ -132,7 +130,7 @@
 									<img src="../img/lstmchangeprediction.png" alt="blog-image">
 								</div>
 								<footer class="entry-meta">
-									LSTM bitcoin day-to-day price differences prediction.
+									LSTM predictions of Bitcoin's day-to-day price differences.
 								</footer>
 
 								<p class="article">Given both models and their predictions, it would be interesting to see which one is better for trading purposes. I would have to define the criteria to buy, sell, or keep bitcoin based on the predictions made by the LSTM models. Maybe a good approach would be to have a Reinforcement Learning agent whose actions are Buy, Sell or Keep learn how to maximize profit based on the LSTM forecast.</p>
